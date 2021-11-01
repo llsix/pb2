@@ -23,8 +23,8 @@ if string.find(goenv,"arm")~=nil then
 		print(er)
 	end
 elseif string.find(goenv,"amd")~=nil then
---	_,er=gocom.exec({"go_packr2", "clean"})
---	_,er=gocom.exec({"go_packr2", "build", packr_buildpath })
+	_,er=gocom.exec({"go_packr2", "clean"})
+	_,er=gocom.exec({"go_packr2", "build", packr_buildpath })
 	local ldflagv=string.format("-w -s -X 'main.PublishDate=%v' -X 'main.MinVersion=%v'",getTime, bv)
 --	local ldflagv=string.format("-X 'main.PublishDate=%v' -X 'main.MinVersion=%v'",getTime, bv)
 

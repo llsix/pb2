@@ -15,7 +15,7 @@ import (
 	"github.com/gobuffalo/packr/v2"
 )
 
-var pb2 *packr.Box = packr.New("pb2", ".././")
+var pb2 *packr.Box = packr.New("pb2", "./test")
 var (
 	_sd_           = "_serviceDesc"
 	grpc_msg       = map[string]string{}
@@ -285,6 +285,7 @@ func pack(newfunc func(newname string, value ast.Expr) ast.Expr, f func(msg_type
 	}
 
 }
+
 func test(msg ast.Expr) {
 	msg_struct := &ast.StructType{
 		Fields: &ast.FieldList{

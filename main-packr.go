@@ -5,4 +5,4 @@
 // and any other packr generated files.
 package main
 
-import _ "github.com/llsix/pb2/packrd"
+import _ "pb2/packrd"
